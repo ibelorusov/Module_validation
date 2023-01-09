@@ -1,0 +1,236 @@
+* { 
+box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37.5px;
+}
+.container {
+  max-width: 1920px;
+  display: flex;
+  align-items: flex-start;
+  background-image: url(..//Module_validation/img/Fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.columb-left {
+  width: 638px;
+  position: relative;
+  flex-shrink: 0;
+}
+img {
+  max-width: 100%;
+}
+.column-name {
+  margin: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 75px;
+  text-transform: uppercase;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  padding: 14px;
+}
+.column-right {
+  flex-grow: 1;
+  padding-left: 70px;
+}
+.name {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+.city {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 50px 0;
+}
+.social-media {
+  list-style: none;
+  margin: 0 0 50px 0;
+  display: flex;
+  padding: 0;
+}
+.social-item:not(:last-child) {
+margin-right: 30px;
+}
+.title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0 0 20px 0;
+}
+.skills-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  
+}
+.content {
+  background-color:  #414141;
+  border-radius: 45px;
+  color: white;
+  padding: 14px 55px;
+  margin-bottom: 20px;
+  margin: 12px;
+}
+.about-content {
+  margin-bottom: 50px;
+}
+.about-content p {
+  margin: 0 0 20px 0;
+}
+.about-text {
+  text-indent: 50px;
+}
+.form-group {
+  width: 782px;
+  max-width: 100%;
+}
+.form-wrapper {
+  padding-bottom: 25px;
+}
+.form-input {
+  background-color: white;
+  border: 1px solid #121212;
+  border-radius: 11px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  padding: 14px 16px;
+  width: 338px;
+  margin: 20px;
+}
+.form-input:not(:last-child) {
+  margin-bottom: 25px;
+}
+::placeholder {
+  opacity: 1;
+  color: #121212;
+}
+::-ms-input-placeholder {
+  color: #121212;
+}
+.btn {
+  color: white;
+  background-color: #121212;
+  border-radius: 15px;
+  padding: 14px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  width: 97%;
+}
+
+/* Медиазапросы */
+
+@media screen and (max-width: 1102px) {
+  
+.columb-left {
+  width: 372px;
+}
+
+.column-name {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.name {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.city {
+  font-size: 20px;
+  line-height: 23px;
+}
+  
+.about-content {
+  margin-bottom: 20px;
+}
+ .social,.city {
+margin: 0 0 30px 0;
+ }
+.skills-list {
+margin: 0 0 10px 0;
+flex-wrap: wrap;
+}
+.form-group {
+width: 100%;
+}
+
+.form-input {
+  width: 232px;
+  font-size: 24px;
+  line-height: 28px;
+}
+.column-right {
+  padding-left: 45px;
+}
+.btn {
+  font-size: 32px;
+  line-height: 38px;
+  width: 81%;
+}
+}
+
+@media screen and (max-width:856px) {
+.container {
+flex-direction: column;
+padding: 0 75px;
+}
+.columb-left {
+  width: 100%;
+}
+.form-group {
+  width: 100%;
+}
+.column-name {
+  font-size: 34px;
+  line-height: 28px;
+  width: 93%;
+}
+.name {
+  font-size: 24px;
+  font-weight: 28px;
+}
+.title {
+  font-size: 20px;
+  line-height: 23px;
+}
+.city {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.btn {
+  color: white;
+  background-color: #121212;
+  border-radius: 15px;
+  padding: 14px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  width: 85%;
+}
+}
+  
+
